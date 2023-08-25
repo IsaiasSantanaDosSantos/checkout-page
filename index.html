@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRM Educação - check out</title>
+    <script src="https://euestudo.com.vc/sys/metro/js/jquery/jquery.min.js "></script>
+    <script src="https://euestudo.com.vc/sys/metro/js/jquery/jquery-ui-1.10.4.custom.min.js "></script>
+    <!-- Author  -->
+    <meta name="author" content="Isaias - Company DRM Education" />
+
+    <meta
+      id="metaImage"
+      property="og:image"
+      content="https://drmeducacao.com.br/img/littleImageDRM.jpg"
+    />
+    <link
+      id="metaLnkImage2"
+      rel="image_src"
+      href="https://drmeducacao.com.br/img/littleImageDRM.jpg"
+    />
+    <meta id="metaDescricao" name="description" content="Checkout DRM" />
+    <!-- Enviar formulário para o servidor -->
+    <script
+      type="text/javascript"
+      src="https://drmeducacao.com.br/js/postTask.js"
+    ></script>
+    <!-- <script type="text/javascript">
+      idSolucaoApp = ???;
+    </script> -->
+    <link
+      rel="icon"
+      href="https://drmeducacao.com.br/img/favicon.png"
+      class=""
+    />
+    <!--FONTS MONTSERRAT-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Mascara telefone -->
+    <script src="https://drmeducacao.com.br/js/mascaraTelefoneCelular.js"></script>
+    <!-- CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://www.euestudo.com.vc/api/files/5764/root.css"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logoBox">
+          <!-- src="https://catalogo.drmeducacao.com.br/loja/imagens/logo14202118512660.png" -->
+          <img alt="Logo image" />
+        </div>
+      </div>
+    </nav>
+    <section class="content">
+      <div class="contentContainer">
+        <div class="firstColumn">
+          <div class="formBox">
+            <p class="formTitle">
+              <span class="mobileTitleNamber" data-form-fields="firstFields"
+                >1
+              </span>
+              Informações para sua inscrição
+            </p>
+            <div class="typeFormBox">
+              <div class="legalPersonOption">
+                <p class="typeFormBoxText">Pessoa Jurídica</p>
+              </div>
+              <div class="physicalPersonOption">
+                <p class="typeFormBoxText">Pessoa Física</p>
+              </div>
+            </div>
+            <!-- Legal person -->
+            <div id="legalPersonForm" class="form">
+              <div class="partOne">
+                <div class="infoVerticalBar"></div>
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="physicalPerson required name"
+                  id="name"
+                  placeholder="Digite seu nome"
+                  onblur="blurAllField(event)"
+                />
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="physicalPerson required email"
+                  id="email"
+                  placeholder="Digite seu email"
+                  onblur="blurAllField(event)"
+                />
+                <label for="rg">RG</label>
+                <input
+                  type="text"
+                  name="rg"
+                  class="physicalPerson required rg"
+                  id="rg"
+                  placeholder="Informe seu RG"
+                  maxlength="9"
+                  onblur="blurAllField(event)"
+                />
+                <label for="cpf">CPF</label>
+                <input
+                  type="text"
+                  name="cpf"
+                  class="physicalPerson cpf required"
+                  id="cpf"
+                  placeholder="Informe seu CPF"
+                  maxlength="11"
+                  onblur="blurAllField(event)"
+                />
+                <div class="responsiveSupport">
+                  <label for="telefone">Telefone</label>
+                  <input
+                    type="text"
+                    name="telefone"
+                    id="telefone"
+                    class="physicalPerson required telefone"
+                    placeholder="(12) 99999-0000"
+                    maxlength="11"
+                    onblur="blurAllField(event)"
+                  />
+                  <label for="cep" class="cepLabel"
+                    >CEP
+                    <input
+                      type="text"
+                      name="cep"
+                      class="physicalPerson required"
+                      id="cep"
+                      placeholder="Digite o CEP"
+                      maxlength="8"
+                      onblur="blurAllField(event)"
+                  /></label>
+                  <!-- onblur="isCEP('cep')" -->
+                  <!-- onkeyup="formataCEP(this)" -->
+                  <p class="getAddressWithCep">Completar endereço com CEP</p>
+                  <label for="address" class="addressLabel"
+                    >Endereço
+                    <input
+                      type="text"
+                      name="address"
+                      class="physicalPerson required"
+                      id="address"
+                      placeholder="Digite seu endereço"
+                  /></label>
+                  <label for="number" class="numberLabel"
+                    >Número
+                    <input
+                      type="number"
+                      name="number"
+                      class="physicalPerson required"
+                      id="number"
+                      placeholder="Número"
+                      onblur="blurAllField(event)"
+                  /></label>
+                  <label for="neighborhood" class="neighborhoodLabel"
+                    >Bairro
+                    <input
+                      type="text"
+                      name="neighborhood"
+                      class="physicalPerson required"
+                      id="neighborhood"
+                      placeholder="Digite seu bairro"
+                  /></label>
+                  <label for="complement" class="complementLabel"
+                    >Complemento
+                    <input
+                      type="text"
+                      name="complement"
+                      class="physicalPerson"
+                      id="complement"
+                      placeholder="Apto, Bloco, Fundos"
+                  /></label>
+                  <label for="state" class="stateLabel"
+                    >UF
+                    <input
+                      type="text"
+                      name="state"
+                      class="physicalPerson required"
+                      id="state"
+                      placeholder="Estado"
+                  /></label>
+                  <label for="city" class="cityLabel"
+                    >Cidade
+                    <input
+                      type="text"
+                      name="city"
+                      class="physicalPerson required"
+                      id="city"
+                      placeholder="Digite sua cidade"
+                  /></label>
+                </div>
+              </div>
+              <div class="partTwo">
+                <div class="chooseVerticalBar"></div>
+                <div class="infoTextBox">
+                  <p class="formTitle">
+                    <span
+                      class="mobileTitleNamber"
+                      data-form-fields="secundFields"
+                      >2
+                    </span>
+                    Escolha seu polo
+                  </p>
+                  <div class="selectBox">
+                    <div>
+                      <select
+                        name=""
+                        class="formStateSelect required"
+                        id="selectState-lp"
+                      >
+                        <option value="" selected="true">UF</option>
+                        <option value="SP">SP</option>
+                        <option value="MT">MT</option>
+                        <option value="MG">MG</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select
+                        name=""
+                        class="formSchoolSelect required"
+                        id="selectSchool-lp"
+                      >
+                        <option value="" selected="true">Polo</option>
+                        <option value="Varzea Paulista-SP">
+                          Varzea Paulista-SP
+                        </option>
+                        <option value="Mazaré-MT">Mazaré-MT</option>
+                        <option value="Belo Horizonte-MG">
+                          Belo Horizonte-MG
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="logoAddressBox infoInstituteColumnOne">
+                  <div class="logoAddressImg">
+                    <!-- src="https://catalogo.drmeducacao.com.br/loja/imagens/logo14202118512660.png" -->
+                    <img alt="Image" />
+                  </div>
+                  <div class="infoInstitute">
+                    <p class="instituteName"><b>IMPACTUS C.O EDUCACIONAL</b></p>
+                    <p class="instituteAddress">
+                      Rua Guidoval, 14 - Pq. Industrial - 12223-222
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="partThree">
+                <div class="partThreeContent">
+                  <p class="formTitle">
+                    <span
+                      class="mobileTitleNamber"
+                      data-form-fields="thirdFields"
+                      >3
+                    </span>
+                    Como você prefere pagar?
+                  </p>
+                  <div class="partThreeAllBoxes">
+                    <div class="partThreeFields">
+                      <div class="typOfPayment">
+                        <label for="creditCar"
+                          ><img
+                            class="creditCar-img"
+                            src="img/credit-card_image.png"
+                            alt="Image"
+                          />
+                          <input
+                            type="radio"
+                            name="payment"
+                            value="creditCar"
+                            id="creditCar"
+                            class="physicalPerson required inputRadio"
+                          />
+                        </label>
+                        <label for="pix"
+                          ><img
+                            class="pix-img"
+                            src="img/pix_image.png"
+                            alt="Image"
+                          />
+                          <input
+                            type="radio"
+                            name="payment"
+                            id="pix"
+                            value="pix"
+                            class="physicalPerson required inputRadio"
+                          />
+                        </label>
+                        <label for="ticket"
+                          ><img
+                            class="ticket-img"
+                            src="img/ticket_image.png"
+                            alt="Image"
+                          />
+                          <input
+                            type="radio"
+                            name="payment"
+                            value="ticket"
+                            id="ticket"
+                            class="physicalPerson required inputRadio"
+                          />
+                        </label>
+                      </div>
+                      <div class="captchaBox">
+                        <label for="captcha">Repita os números:</label>
+
+                        <span>
+                          <div>
+                            <input
+                              type="text"
+                              name="captcha"
+                              id="captchaCode"
+                              class="captchaCode physicalPerson required"
+                              placeholder="Captcha"
+                              onblur="blurAllField(event)"
+                            />
+                          </div>
+                          <img
+                            src="img/captcha_image.png"
+                            alt="Image"
+                            class="captchaImg"
+                          />
+                        </span>
+                      </div>
+                      <div class="termBtnBox">
+                        <label for="term" class="termLabel">
+                          <span class="organizationBox">
+                            <input
+                              type="checkbox"
+                              class="checkboxInput physicalPerson required"
+                              name="term"
+                              id="term-lp"
+                            />
+                            <span>
+                              Aceito os
+                              <a class="termPageLink">Termos do Aluno</a><br />
+                              e
+                              <a class="politicPageLink">
+                                Políticas de Privacidade</a
+                              ></span
+                            >
+                          </span>
+                          <p class="termErrorMsg"></p>
+                        </label>
+                        <button
+                          type="button"
+                          class="formSubmitBtn"
+                          id="submit-button"
+                        >
+                          MATRICULE-SE
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Secund column -->
+        <div class="secundColumn">
+          <div class="insertDiscountCouponBox">
+            <div class="infoCourse">
+              <div class="headerInfoCourse">
+                <div class="titleCourseBox">
+                  <p class="titleCourse">Nome do curso</p>
+                </div>
+                <!-- src="img/test-course_image.png" -->
+                <img alt="Image course" class="headerCourseImg" />
+              </div>
+              <div class="contentInfoCourse">
+                <p class="oldPrice">
+                  <span class="fromOld">de: </span
+                  ><span class="numberOldPrice"
+                    >R$ <span class="oldPriceApi">267,00</span></span
+                  ><span class="oldPriceBar"></span>
+                </p>
+                <div class="newPriceBox">
+                  <p class="fromNew">por:</p>
+                  <p class="newPriceText">
+                    R$ <span class="newPriceApi">9.999,90</span>
+                  </p>
+                </div>
+                <select name="parcelsCourse" id="parcelsCourse">
+                  <option value="" selected="true">
+                    <p class="parcelsCourseText">
+                      Parcelas
+                      <!-- <span class="parcelsApi">99</span>x R$
+                    <span class="valueParcelsApi">99,90</span> -->
+                    </p>
+                  </option>
+                </select>
+                <p class="interest-free">Sem juros</p>
+              </div>
+            </div>
+
+            <div class="formDiscount">
+              <label for="coupon" class="couponLabel">Cupom:</label>
+              <input
+                type="text"
+                name="coupon"
+                id="coupon"
+                placeholder="Escreva o cupom aqui"
+              />
+            </div>
+            <button class="couponBtn">USAR CUPOM</button>
+            <div class="congratulationBox">
+              <p class="congratulationText">
+                <b>Parabéns!</b><br />Você terá um
+                <b>
+                  desconto total de R$
+                  <span class="apiDiscount">168,00</span></b
+                >
+                como bolsista, se parcelas pagas até o dia do vencimento
+              </p>
+              <img src="img/congratulation_image.png" alt="Image" />
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- <div class="courseBtnColumn"></div> -->
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+    <script src="js/validate-cpf.js"></script>
+  </body>
+</html>

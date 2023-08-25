@@ -1,0 +1,127 @@
+:root {
+  --redColor: red;
+}
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--iceColor);
+  font-family: var(--defaultFont) !important;
+}
+
+/* Nav seciton */
+nav {
+  width: 100%;
+  background-color: var(--iceColor);
+  color: var(--cardsBarColor);
+  border-bottom: 1px solid;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+/* And of Nav seciton */
+
+.creditContainer {
+  max-width: 550px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+.containerTitle {
+  font-size: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.titleInfo {
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+}
+.loginBtn {
+  background-color: var(--primary);
+  color: var(--whiteColor);
+  padding: 5px 43px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.loginBtn:hover {
+  transform: scale(1.02);
+}
+.loginBtn:active {
+  filter: brightness(75%);
+}
+.creditInfo {
+  max-width: 478px;
+  width: 90%;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.acessCodeBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  margin-bottom: 25px;
+}
+.acessCode {
+  font-size: 27px;
+  font-weight: bold;
+}
+.acessCode .validateDate {
+  font-weight: bold;
+}
+.imgBtn {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: var(--whiteColor);
+  padding: 5px 12px;
+  border-radius: 12px;
+}
+
+.imgBtn i {
+  font-size: 15px;
+}
+.imgBtn p {
+  font-size: 13px;
+  color: var(--blackColor);
+  line-height: 11px;
+}
+.imgBtn:hover {
+  transform: scale(1.02);
+}
+.imgBtn:active {
+  box-shadow: 0px 0px 6px 2px #0c162f78;
+}
+.studentEmail {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.sslCetificationImg {
+  max-width: 190px;
+  width: 95%;
+  margin: auto;
+}

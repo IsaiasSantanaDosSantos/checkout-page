@@ -1,0 +1,180 @@
+:root {
+  --redColor: red;
+}
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--iceColor);
+  font-family: var(--defaultFont) !important;
+}
+
+/* Nav seciton */
+nav {
+  width: 100%;
+  background-color: var(--iceColor);
+  color: var(--cardsBarColor);
+  border-bottom: 1px solid;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+/* And of Nav seciton */
+
+.ticketContainer {
+  max-width: 550px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+.containerTitle {
+  font-size: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.titleInfo {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 25px;
+}
+.studantEmail {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.containerSubTitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.ticketInfo {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.generalInfoTicket {
+  max-width: 350px;
+  width: 90%;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: var(--whiteColor);
+  padding: 10px;
+  border-radius: 10px;
+}
+.infoImgTicketCode img {
+  width: 100%;
+}
+.infoBuy {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.productPriceBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.productPriceBox p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.infoImgTicketCode {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerInfoImgTicketCode {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerInfoImgTicketCode p {
+  font-size: 12px;
+}
+.validateDate {
+  font-weight: bold;
+}
+.ticketCodeNumber {
+  width: 100%;
+  font-size: 10.8px;
+  font-weight: 500;
+  text-align: center;
+}
+.pageBtnPage {
+  max-width: 350px;
+  width: 90%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.imgBtn {
+  width: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--whiteColor);
+  border-radius: 11px;
+  padding: 6px 8px;
+  white-space: nowrap;
+  column-gap: 10px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.imgBtn i {
+  font-size: 15px;
+}
+.imgBtn p {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--blackColor);
+}
+.imgBtn:hover {
+  transform: scale(1.02);
+}
+.imgBtn:active {
+  box-shadow: 0px 0px 6px 2px #0c162f78;
+}
+.lastTextBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.lastTextBox img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+.lastTextBox p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+}
+.sslCetificationImg {
+  max-width: 190px;
+  width: 95%;
+  margin: auto;
+}

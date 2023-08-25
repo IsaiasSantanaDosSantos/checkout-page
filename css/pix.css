@@ -1,0 +1,142 @@
+:root {
+  --redColor: red;
+}
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--iceColor);
+  font-family: var(--defaultFont) !important;
+}
+
+/* Nav seciton */
+nav {
+  width: 100%;
+  background-color: var(--iceColor);
+  color: var(--cardsBarColor);
+  border-bottom: 1px solid;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+/* And of Nav seciton */
+
+.pixContainer {
+  max-width: 550px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+.containerTitle {
+  font-size: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.titleInfo {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 25px;
+}
+.studantEmail {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.containerSubTitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.pixInfo {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.generalInfoPix {
+  width: auto;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--whiteColor);
+  padding: 30px;
+  border-radius: 10px;
+}
+.infoImgPixCode img {
+  width: 100%;
+}
+.infoBuy {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.infoImgPixCode {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.validateDate {
+  font-weight: bold;
+}
+
+.pageBtnPage {
+  max-width: 350px;
+  width: 90%;
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.imgBtn {
+  width: 47%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--whiteColor);
+  border-radius: 16px;
+  padding: 6px 8px;
+  white-space: nowrap;
+  column-gap: 10px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.imgBtn i {
+  font-size: 20px;
+}
+.imgBtn p {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--blackColor);
+  line-height: 11px;
+}
+.imgBtn:hover {
+  transform: scale(1.02);
+}
+.imgBtn:active {
+  box-shadow: 0px 0px 6px 2px #0c162f78;
+}
+
+.sslCetificationImg {
+  max-width: 190px;
+  width: 95%;
+  margin: auto;
+}
